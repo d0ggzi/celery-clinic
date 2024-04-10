@@ -1,0 +1,10 @@
+{% extends 'feedback/base.html' %}
+
+{% block content %}
+
+<h1>Спасибо!</h1>
+
+<p>Твой отзыв был успешно отправлен.</p>
+<p>Если тебе есть что сказать, ты можешь <a href="{% url 'feedback:feedback' %}">отправить ещё один отзыв</a></p>
+
+{% endblock content %}

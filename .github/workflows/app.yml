@@ -1,0 +1,15 @@
+name: Python application
+
+on: push
+
+jobs:
+  tests-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build docker image
+        run: docker-compose up --build -d
+      - name: Run tests
+        run: docker-compose exec -T server pytest
+      - name: Stop container
+        run: docker-compose stop

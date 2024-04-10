@@ -1,0 +1,15 @@
+{% extends 'feedback/base.html' %}
+
+{% block content %}
+
+    <h1>Привет, как дела?</h1>
+    
+    <p>Отправь нам свой отзыв.</p>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit"/>
+    </form>
+
+{% endblock content %}
