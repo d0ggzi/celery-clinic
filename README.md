@@ -1,7 +1,6 @@
 # FastAPI + Celery + Redis
 
 Мы не молодеем, появляются новые болячки. Пора бы уже наконец сходить в больничку к терапевту.
-Записать тебя на прием?
 
 ![home](assets/img/image2.png)
 ![records](assets/img/image1.png)
